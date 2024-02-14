@@ -1,4 +1,5 @@
-COMP-2710 Auburn University.<br>
-Software Construction.<br>
-Dr. Li.<br>
+Auburn University<br>
+COMP-2710<br>
+Software Construction<br>
+Dr. Li<br>
 C++
