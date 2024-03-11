@@ -5,8 +5,8 @@
 // Resources   : I used the following resources to help me complete this project:
 // Citation 1  - https://www.geeksforgeeks.org/selection-sort/
 // Citation 2  - https://cplusplus.com/doc/tutorial/files/
-// Compile     : g++ project3_Ramey_car0126.cpp -o proj3
-// Run         : ./proj3
+// Compile     : g++ -std=c++11 project3_Ramey_car0126.cpp -o Project3
+// Run         : ./Project3
 
 #include <iostream>
 #include <fstream>
