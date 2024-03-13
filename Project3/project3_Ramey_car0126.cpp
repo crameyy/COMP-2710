@@ -106,6 +106,22 @@ void write_file(int* arr, int arr_size) {
         "\n*** Goodbye. ***";
 }
 
+bool check_file(string file_name) {
+    // checks if file is a real and valid file
+    bool valid_file = false;
+    ifstream instream;
+    instream.open((char*)file_name.c_str());
+    valid_file = instream.good();
+    if (!valid_file) {
+        cout << "Error: Invalid filename, please try again\n";
+        cout << endl;
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
 int main() {
 
     // takes user input to get file name
@@ -115,6 +131,14 @@ int main() {
     cout << "*** Welcome to Ramey's sorting program ***\n" <<
         "Enter the first input file name: ";
     cin >> file_name1;
+
+    bool file_check1 = check_file(file_name1);
+    // while loop for file check1
+    while (file_check1 == false) {
+        cout << "Enter the first input file name: ";
+        cin >> file_name1;
+        file_check1 = check_file(file_name1);
+    }
     int count1 = arr_size(file_name1);
     cout << "The list of " << count1 << " numbers in file " <<
         file_name1 << " is:\n";
@@ -122,6 +146,14 @@ int main() {
 
     cout << "\nEnter the second input file name: ";
     cin >> file_name2;
+
+    bool file_check2 = check_file(file_name2);
+    // while loop for file check2
+    while (file_check2 == false) {
+        cout << "Enter the second input file name: ";
+        cin >> file_name2;
+        file_check2 = check_file(file_name2);
+    }
     int count2 = arr_size(file_name2);
     cout << "The list of " << count2 << " numbers in file " <<
         file_name2 << " is:\n";
