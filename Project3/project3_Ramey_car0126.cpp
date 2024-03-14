@@ -103,7 +103,7 @@ void write_file(int* arr, int arr_size) {
     oFile.close();
 
     cout << "*** Please check the new file - " << output_filename << " ***" <<
-        "\n*** Goodbye. ***";
+        "\n*** Goodbye. ***" << endl;
 }
 
 bool check_file(string file_name) {
@@ -164,5 +164,5 @@ int main() {
     int count3 = count1 + count2;
     write_file(sorted_arr, count3);
 
-    return 1;
+    return 0;
 }
