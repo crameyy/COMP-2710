@@ -6,8 +6,8 @@
 // Citation1   : https://www.geeksforgeeks.org/linked-list-set-1-introduction/
 // Citation2   : https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/
 // Citation3   : https://stackoverflow.com/questions/7494244/how-to-change-entry-point-of-c-program-with-gcc
-// Compile     : g++ -std=c++11 project4_Ramey_car0126.cpp -o Project4
-// Compile UNIT TEST => : g++ -std=c++11 project4_Ramey_car0126.cpp -o Project4 -DUNIT_TESTING
+// Compile     : g++ project4_Ramey_car0126.cpp -o Project4
+// Compile UNIT TEST => : g++ project4_Ramey_car0126.cpp -o Project4 -DUNIT_TESTING
 // Run         : ./Project4
 
 #include <iostream>
