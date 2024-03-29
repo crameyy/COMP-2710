@@ -151,7 +151,7 @@ void Unit_Test() {
 
     cout << "Unit Test Case 1: Ask no question. The program should give a warning message." << endl;
     ask_question(&node_one, 0);
-    cout << "Case 1 Passed\n\n";
+    cout << "\nCase 1 Passed\n\n";
 
     cout << "Unit Test Case 2.1: Ask 1 question in the linked list. The tester enters an incorrect answer." << endl;
     total_points = ask_question(&node_one, 1);
